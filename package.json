@@ -1,35 +1,23 @@
 {
-  "name": "@aurinko/sdk",
+  "name": "aurinko-sdk",
   "version": "1.0.0",
-  "description": "Production-grade TypeScript SDK for all Aurinko Unified Mailbox APIs",
+  "description": "Unofficial TypeScript SDK for Aurinko Unified Mailbox APIs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
-
-  "type": "module",
   "sideEffects": false,
-
   "exports": {
     ".": {
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js",
       "types": "./dist/types/index.d.ts"
-    },
-    "./package.json": "./package.json"
-  },
-
-  "typesVersions": {
-    "*": {
-      "*": ["dist/types/*"]
     }
   },
-
   "files": [
     "dist",
     "README.md",
     "LICENSE"
   ],
-
   "scripts": {
     "build": "npm run build:esm && npm run build:cjs && npm run build:types",
     "build:esm": "tsc -p tsconfig.esm.json",
@@ -46,7 +34,6 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm run clean && npm run build"
   },
-
   "keywords": [
     "aurinko",
     "email",
@@ -60,34 +47,25 @@
     "typescript",
     "sdk"
   ],
-
-  "author": "Aurinko",
-
+  "author": "Kanishka Naik",
   "contributors": [
     {
       "name": "Kanishka Naik"
     }
   ],
-
-  "license": "MIT",
-
+  "license": "Apache-2.0",
   "engines": {
     "node": ">=18.0.0"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/iamkanishka/aurinko-sdk.git"
   },
-
   "homepage": "https://github.com/iamkanishka/aurinko-sdk#readme",
-
   "bugs": {
     "url": "https://github.com/iamkanishka/aurinko-sdk/issues"
   },
-
   "dependencies": {},
-
   "devDependencies": {
     "ts-node": "^10.9.2",
     "@types/jest": "^29.5.12",
