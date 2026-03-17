@@ -2,7 +2,7 @@
  * AurinkoClient — main entry point for the Aurinko TypeScript SDK
  */
 
-import { HttpClient } from "./http/client.js";
+import { HttpClient } from "./http/client";
 import {
   EmailResource,
   CalendarResource,
@@ -13,9 +13,9 @@ import {
   GroupBookingResource,
   DirectResource,
   AuthResource,
-} from "./resources/index.js";
-import { ConfigurationError } from "./errors.js";
-import type { AurinkoConfig } from "./config.js";
+} from "./resources/index";
+import { ConfigurationError } from "./errors";
+import type { AurinkoConfig } from "./config";
 
 export class AurinkoClient {
   private readonly http: HttpClient;
