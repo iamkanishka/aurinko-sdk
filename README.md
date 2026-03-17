@@ -1,6 +1,6 @@
 # aurinko-sdk
 
-Production-grade TypeScript SDK for all [Aurinko Unified Mailbox APIs](https://docs.aurinko.io).
+Unofficial TypeScript SDK for  [Aurinko Unified Mailbox APIs](https://docs.aurinko.io).
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-blue)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green)](https://nodejs.org/)
